@@ -34,7 +34,7 @@ class Board:
         self.flag = PhotoImage(file="temp/flag.png")
         self.lost = PhotoImage(file="temp/lost.png")
         self.won = PhotoImage(file="temp/won.png")
-        self.mine_bad_flag=PhotoImage(file="C:/temp/mine_bad_flag.png")
+        self.mine_bad_flag=PhotoImage(file="temp/mine_bad_flag.png")
         self.frame_top = Frame(self.window, width=700, height=1000)
         self.frame_top.pack()
         self.frame_board = Frame(self.window, width=700, height=1000)
@@ -47,7 +47,7 @@ class Board:
         self.btn_status.pack(side=LEFT)
         self.lbl_timer = Label(self.frame_top, text='')
         self.lbl_timer.pack(side=RIGHT, fill=BOTH, expand=True)
-        self.customFont = tkinter.font(family="Helvetica", size=12)
+
         self.reset_game()
         self.window.mainloop()
 
